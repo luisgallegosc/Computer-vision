@@ -1,5 +1,10 @@
 import cv2
-image = cv2.imread('../images/basketball.jpg')
+
+file_path = 'C:/Users/benito/OneDrive/Escritorio/UNSAAC/8vo/vision computacional/lab08/sample shapes.png'
+
+# Intenta cargar la imagen en color
+image = cv2.imread(file_path)
+
 #--Haga una copia de esta imagen y guárdela en otra variable
 imageCopy= image.copy()
 cv2.imshow('imagen BGR', image)
