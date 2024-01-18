@@ -20,7 +20,7 @@ cv2.destroyAllWindows()
 #--la imagen debe tener tres canales, replicaremos el plano único de la 
 # imagen binaria tres veces y luego fusionaremos los tres planos para 
 # extenderlo al espacio de color BGR.
-bgr = cv2.merge([inverted_binary_im, inverted_binary_im, inverted_binary_im]);
+bgr = cv2.merge([inverted_binary_im, inverted_binary_im, inverted_binary_im])
 #--Encuentra los contornos en la imagen binaria
 contours,hierarchy = cv2.findContours(inverted_binary_im, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 #--Marque todos los contornos detectados en la imagen BGR original en cualquier color (digamos, verde). 
